@@ -1,0 +1,25 @@
+interface Academics {
+    void study();
+}
+
+interface Sports {
+    void play();
+}
+
+class Student implements Academics, Sports {
+
+    public void study() {
+        System.out.println("Student is studying.");
+    }
+
+    public void play() {
+        System.out.println("Student is playing.");
+    }
+
+    public static void main(String[] args) {
+        Student s = new Student();
+
+        s.study();
+        s.play();
+    }
+}
